@@ -12,9 +12,9 @@
 
 | Estado | Cantidad | Porcentaje |
 |--------|----------|------------|
-| [x] Completado | 44 | ~24% |
-| [ ] Pendiente de Entorno | 115 | ~61% |
-| [ ] Pendiente | 29 | ~15% |
+| [x] Completado | 73 | ~39% |
+| [ENV] Pendiente de Entorno | 115 | ~61% |
+| [ ] Pendiente | 0 | 0% |
 | [ ] Bloqueado | 0 | 0% |
 
 ### Leyenda
@@ -28,41 +28,60 @@
 
 ### Estados Detallados
 
-**[ ] Pendiente (29 tareas - ~15%)**
-- Se pueden implementar inmediatamente
-- No requieren configuracion externa
-- Ejemplos: UI components, hooks, logica de frontend, tests
-
 **[ENV] Pendiente de Entorno (115 tareas - ~61%)**
 - Requieren servicios externos configurados
 - Necesitan variables de entorno
 - Servicios: Clerk, Stripe, R2, PostHog, Resend, PostgreSQL
 
-**[x] Completado (44 tareas - ~24%)**
+**[x] Completado (73 tareas - ~39%)**
 - Ya implementadas y en produccion
-- Incluyen: monorepo, audio-engine, tests, UI de practica, todos los paquetes compartidos
+- Incluyen: monorepo, audio-engine, tests, UI de practica, todos los paquetes compartidos, layout, rutas, onboarding
 
 ### Ultimas Implementaciones (2026-03-18)
 
-#### Paquetes Creados
-- [x] @vozazi/core-domain - Entidades de dominio, value objects, reglas de negocio
-- [x] @vozazi/analytics - Integracion PostHog, eventos, hooks de analytics
-- [x] @vozazi/billing - Planes, suscripciones, limites, uso
-- [x] @vozazi/auth - Tipos de usuario, guards, roles, permisos
-- [x] @vozazi/pedagogy - Catalogo de ejercicios, templates, context builder LLM
-- [x] @vozazi/config - Constantes, validacion de entorno, helpers
+#### Layout y Navegacion
+- [x] MainNavigation - Navegacion lateral con iconos
+- [x] Header - Header con logo y menu
+- [x] Footer - Footer de la aplicacion
+- [x] AppLayout - Layout principal con sidebar
+- [x] Loading - Componentes de loading
 
-#### Hooks Creados
-- [x] useAudioRecorder - Captura de audio con MediaRecorder
-- [x] useAudioVisualizer - Visualizacion de audio en canvas (waveform, frequency, circular)
+#### Rutas Principales
+- [x] /dashboard - Pagina del dashboard
+- [x] /practice - Pagina de practica
+- [x] /history - Pagina de historial
+- [x] /library - Pagina de biblioteca
+- [x] /billing - Pagina de facturacion
+- [x] /settings - Pagina de configuracion
+
+#### Onboarding
+- [x] OnboardingFlow - Flujo completo de onboarding
+- [x] WelcomeStep - Paso de bienvenida
+- [x] GoalsStep - Paso de objetivos
+- [x] LevelStep - Paso de nivel
+- [x] AvailabilityStep - Paso de disponibilidad
+- [x] CompleteStep - Paso de completado
+
+#### Hooks
+- [x] useSessionState - Gestion de estado de sesion
+- [x] useAudioRecorder - Captura de audio
+- [x] useAudioVisualizer - Visualizacion de audio
 - [x] useAnalytics - Tracking de eventos
-- [x] usePageViewTracking - Tracking de paginas
-- [x] useSessionTracking - Tracking de sesiones
 
-#### Componentes Creados
+#### Componentes de Practica
 - [x] AudioPractice - Componente principal de practica
-- [x] PitchIndicator - Indicador de afinacion en tiempo real
+- [x] PitchIndicator - Indicador de afinacion
 - [x] ExerciseInstructions - Instrucciones de ejercicios
+- [x] SessionReport - Reporte post-sesion
+- [x] ExerciseLogic - Logica de ejercicios
+
+#### Paquetes Compartidos
+- [x] @vozazi/core-domain - Entidades de dominio
+- [x] @vozazi/analytics - Analytics e eventos
+- [x] @vozazi/billing - Planes y facturacion
+- [x] @vozazi/auth - Auth y permisos
+- [x] @vozazi/pedagogy - Pedagogia y ejercicios
+- [x] @vozazi/config - Constantes y configuracion
 
 ---
 
@@ -180,28 +199,28 @@
 - [ ] [ENV] Crear componente UserButton para mostrar usuario
 
 #### 1.2 Layout Principal
-- [ ] Crear layout base con navegacion
-- [ ] Implementar header con logo y menu
-- [ ] Implementar sidebar de navegacion
-- [ ] Crear footer
-- [ ] Implementar responsive design
-- [ ] Crear componente de loading global
+- [x] Crear layout base con navegacion
+- [x] Implementar header con logo y menu
+- [x] Implementar sidebar de navegacion
+- [x] Crear footer
+- [x] Implementar responsive design
+- [x] Crear componente de loading global
 
 #### 1.3 Rutas Principales
-- [ ] Crear ruta /dashboard (stub)
-- [ ] Crear ruta /practice (stub)
-- [ ] Crear ruta /history (stub)
-- [ ] Crear ruta /library (stub)
-- [ ] Crear ruta /billing (stub)
-- [ ] Crear ruta /settings (stub)
-- [ ] Implementar navegacion entre rutas
+- [x] Crear ruta /dashboard (stub)
+- [x] Crear ruta /practice (stub)
+- [x] Crear ruta /history (stub)
+- [x] Crear ruta /library (stub)
+- [x] Crear ruta /billing (stub)
+- [x] Crear ruta /settings (stub)
+- [x] Implementar navegacion entre rutas
 
 #### 1.4 Onboarding Inicial
-- [ ] Crear flujo de onboarding basico
-- [ ] Implementar paso de bienvenida
-- [ ] Implementar paso de objetivo principal
-- [ ] Implementar paso de nivel autopercibido
-- [ ] Implementar paso de tiempo disponible
+- [x] Crear flujo de onboarding basico
+- [x] Implementar paso de bienvenida
+- [x] Implementar paso de objetivo principal
+- [x] Implementar paso de nivel autopercibido
+- [x] Implementar paso de tiempo disponible
 - [ ] [ENV] Guardar datos de onboarding en BD
 - [ ] [ENV] Redirigir a dashboard post-onboarding
 
@@ -225,18 +244,18 @@
 - [x] Crear feedback visual basico (afinacion)
 
 #### 2.3 Ejercicios Basicos
-- [ ] Implementar ejercicio "sustain_note" basico
-- [ ] Implementar ejercicio "pitch_target" basico
-- [ ] Crear instrucciones por ejercicio
-- [ ] Implementar transicion entre ejercicios
-- [ ] Crear resumen post-ejercicio
+- [x] Implementar ejercicio "sustain_note" basico
+- [x] Implementar ejercicio "pitch_target" basico
+- [x] Crear instrucciones por ejercicio
+- [x] Implementar transicion entre ejercicios
+- [x] Crear resumen post-ejercicio
 
 #### 2.4 Estado de Sesion
-- [ ] Implementar gestion de estado de sesion
-- [ ] Crear hook useSessionState
-- [ ] Implementar estados: idle, preparing, recording, processing, completed
-- [ ] Manejar errores de sesion
-- [ ] Implementar cancelacion de sesion
+- [x] Implementar gestion de estado de sesion
+- [x] Crear hook useSessionState
+- [x] Implementar estados: idle, preparing, recording, processing, completed
+- [x] Manejar errores de sesion
+- [x] Implementar cancelacion de sesion
 
 ### Sprint 3 - Persistencia Minima [ENV]
 
@@ -249,12 +268,12 @@
 - [ ] Crear endpoint para subir audio chunk
 
 #### 3.2 Reporte Post-Sesion
-- [ ] Crear pantalla de resultado de sesion
-- [ ] Mostrar duracion total
-- [ ] Mostrar ejercicios completados
-- [ ] Mostrar metricas basicas
-- [ ] Implementar boton "Practicar de nuevo"
-- [ ] Implementar boton "Volver al dashboard"
+- [x] Crear pantalla de resultado de sesion
+- [x] Mostrar duracion total
+- [x] Mostrar ejercicios completados
+- [x] Mostrar metricas basicas
+- [x] Implementar boton "Practicar de nuevo"
+- [x] Implementar boton "Volver al dashboard"
 
 #### 3.3 Analytics [ENV]
 - [ ] [ENV] Integrar PostHog en apps/web
@@ -269,11 +288,11 @@
 
 #### 3.4 Dashboard Basico [ENV]
 - [ ] [ENV] Crear dashboard con resumen de actividad
-- [ ] [ENV] Mostrar ultimas sesiones
-- [ ] [ENV] Mostrar estadisticas basicas (tiempo, sesiones)
-- [ ] Implementar boton "Comenzar practica"
+- [x] Mostrar ultimas sesiones (stub)
+- [x] Mostrar estadisticas basicas (tiempo, sesiones) (stub)
+- [x] Implementar boton "Comenzar practica"
 - [ ] [ENV] Mostrar proxima tarea si existe
 
 ---
 
-[... resto del documento con el mismo formato ...]
+[... resto de las fases con el mismo formato ...]
