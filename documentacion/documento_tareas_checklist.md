@@ -19,12 +19,28 @@
 
 ### Leyenda
 
-| Símbolo | Descripción |
-|---------|-------------|
-| `[x]` | ✅ COMPLETADO |
-| `[ ]` | ⏳ PENDIENTE |
-| `[ ] 🔒` | 🔒 PENDIENTE DE ENTORNO (requiere variables de entorno) |
-| `[ ]` | ❌ BLOQUEADO |
+| Símbolo | Estado | Descripción |
+|---------|--------|-------------|
+| `[x]` | ✅ **Completado** | Tarea implementada |
+| `[ ]` | 🟢 **Pendiente** | Tarea que **SE PUEDE implementar** (no requiere entorno) |
+| `[ ] 🔒` | 🔴 **Pendiente de Entorno** | Tarea **BLOQUEADA** (requiere variables de entorno/servicios) |
+| `[ ]` | 🟡 **En Progreso** | Tarea siendo implementada |
+
+### Estados Detallados
+
+**🟢 Pendiente (33 tareas - ~18%)**
+- Se pueden implementar inmediatamente
+- No requieren configuración externa
+- Ejemplos: UI components, hooks, lógica de frontend, tests
+
+**🔒 Pendiente de Entorno (115 tareas - ~61%)**
+- Requieren servicios externos configurados
+- Necesitan variables de entorno
+- Servicios: Clerk, Stripe, R2, PostHog, Resend, PostgreSQL
+
+**✅ Completado (40 tareas - ~21%)**
+- Ya implementadas y en producción
+- Incluyen: monorepo, audio-engine, tests, UI de práctica
 
 ### Últimas Implementaciones (2026-03-18)
 
