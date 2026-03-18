@@ -1,0 +1,66 @@
+{
+  "title": "Bienvenido a VOZAZI",
+  "step": "Paso {{current}} de {{total}}",
+  "steps": {
+    "welcome": {
+      "title": "¡Bienvenido!",
+      "description": "Comencemos con tu viaje vocal"
+    },
+    "goals": {
+      "title": "Tus objetivos",
+      "description": "¿Qué quieres lograr?",
+      "options": {
+        "improve_pitch": "Mejorar afinación",
+        "increase_range": "Aumentar rango vocal",
+        "better_technique": "Mejorar técnica",
+        "prepare_performance": "Preparar actuación",
+        "recover_voice": "Recuperar voz",
+        "general_fitness": "Fitness vocal general"
+      }
+    },
+    "level": {
+      "title": "Tu nivel",
+      "description": "¿Cuál es tu experiencia cantando?",
+      "options": {
+        "beginner": "Principiante (0-1 años)",
+        "intermediate": "Intermedio (1-3 años)",
+        "advanced": "Avanzado (3+ años)",
+        "professional": "Profesional"
+      }
+    },
+    "voice_type": {
+      "title": "Tipo de voz",
+      "description": "¿Conoces tu tipo de voz?",
+      "options": {
+        "soprano": "Soprano",
+        "mezzo": "Mezzosoprano",
+        "alto": "Alto/Contralto",
+        "tenor": "Tenor",
+        "baritone": "Barítono",
+        "bass": "Bajo",
+        "not_sure": "No estoy seguro/a"
+      }
+    },
+    "availability": {
+      "title": "Disponibilidad",
+      "description": "¿Cuánto tiempo puedes practicar?",
+      "options": {
+        "daily_5": "5 min al día",
+        "daily_15": "15 min al día",
+        "daily_30": "30 min al día",
+        "weekly_few": "Unas veces por semana"
+      }
+    },
+    "complete": {
+      "title": "¡Todo listo!",
+      "description": "Tu perfil está configurado",
+      "next_step": "Comenzar primera práctica"
+    }
+  },
+  "navigation": {
+    "back": "Volver",
+    "next": "Continuar",
+    "skip": "Saltar por ahora",
+    "finish": "Finalizar"
+  }
+}

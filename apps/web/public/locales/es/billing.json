@@ -1,0 +1,55 @@
+{
+  "title": "Suscripción",
+  "current_plan": "Plan actual",
+  "upgrade_plan": "Mejorar plan",
+  "downgrade": "Bajar de plan",
+  "cancel_subscription": "Cancelar suscripción",
+  "billing_info": "Información de facturación",
+  "payment_method": "Método de pago",
+  "billing_history": "Historial de facturación",
+  "next_billing_date": "Próxima facturación: {{date}}",
+  "plans": {
+    "free": {
+      "name": "Gratis",
+      "price": "Gratis",
+      "description": "Para empezar",
+      "features": {
+        "sessions_per_month": "10 sesiones/mes",
+        "basic_analysis": "Análisis básico",
+        "limited_exercises": "Ejercicios limitados"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "$19.99/mes",
+      "description": "Para cantantes serios",
+      "features": {
+        "unlimited_sessions": "Sesiones ilimitadas",
+        "advanced_analysis": "Análisis avanzado",
+        "all_exercises": "Todos los ejercicios",
+        "progress_tracking": "Seguimiento de progreso",
+        "priority_support": "Soporte prioritario"
+      },
+      "popular": "Más popular"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "$49.99/mes",
+      "description": "Para profesionales",
+      "features": {
+        "everything_pro": "Todo lo del plan Pro",
+        "ai_coaching": "Coaching con IA",
+        "custom_exercises": "Ejercicios personalizados",
+        "detailed_reports": "Informes detallados",
+        "api_access": "Acceso a API",
+        "dedicated_support": "Soporte dedicado"
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "cancel_anytime": "¿Puedo cancelar en cualquier momento?",
+    "refund_policy": "¿Cuál es la política de reembolso?",
+    "change_plan": "¿Puedo cambiar de plan?"
+  }
+}

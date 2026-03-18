@@ -1,0 +1,82 @@
+{
+  "$schema": "https://sdk.vercel.ai/mcp/schema.json",
+  "servers": [
+    {
+      "name": "VOZAZI Audio Engine",
+      "description": "AI-powered audio processing and voice analysis",
+      "url": "https://audio.vozazi.com/mcp",
+      "transport": {
+        "type": "sse",
+        "endpoint": "/mcp/sse"
+      },
+      "authentication": {
+        "type": "bearer",
+        "tokenUrl": "https://vozazi.com/api/auth/token"
+      },
+      "tools": [
+        {
+          "name": "transcribe_audio",
+          "description": "Transcribe an audio file to text using Whisper"
+        },
+        {
+          "name": "analyze_audio_sentiment",
+          "description": "Analyze the sentiment of an audio file"
+        },
+        {
+          "name": "analyze_audio_emotions",
+          "description": "Detect emotions in an audio file"
+        },
+        {
+          "name": "summarize_audio",
+          "description": "Generate a summary of an audio file"
+        },
+        {
+          "name": "extract_audio_keywords",
+          "description": "Extract keywords and topics from an audio file"
+        },
+        {
+          "name": "get_audio_metadata",
+          "description": "Get metadata for an audio file"
+        },
+        {
+          "name": "list_user_audios",
+          "description": "List all audio files for a user"
+        },
+        {
+          "name": "delete_audio",
+          "description": "Delete an audio file"
+        },
+        {
+          "name": "get_user_usage",
+          "description": "Get usage statistics for a user"
+        },
+        {
+          "name": "get_user_subscription",
+          "description": "Get subscription status for a user"
+        },
+        {
+          "name": "get_service_health",
+          "description": "Get health status of all VOZAZI services"
+        },
+        {
+          "name": "get_audio_processing_status",
+          "description": "Get the processing status of an audio file"
+        }
+      ],
+      "resources": [
+        {
+          "type": "audio",
+          "description": "Audio files stored in VOZAZI"
+        },
+        {
+          "type": "transcript",
+          "description": "Transcribed text from audio files"
+        },
+        {
+          "type": "analysis",
+          "description": "Analysis results (sentiment, emotions, keywords)"
+        }
+      ]
+    }
+  ]
+}

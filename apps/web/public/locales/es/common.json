@@ -1,0 +1,67 @@
+{
+  "app_name": "VOZAZI",
+  "app_description": "Coach Vocal Digital",
+  "navigation": {
+    "home": "Inicio",
+    "dashboard": "Dashboard",
+    "practice": "Práctica",
+    "history": "Historial",
+    "library": "Biblioteca",
+    "billing": "Facturación",
+    "settings": "Configuración"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "signup": "Registrarse",
+    "logout": "Cerrar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "remember_me": "Recordarme",
+    "no_account": "¿No tienes cuenta?",
+    "have_account": "¿Ya tienes cuenta?",
+    "sign_in_with": "Iniciar sesión con {{provider}}",
+    "sign_up_with": "Registrarse con {{provider}}"
+  },
+  "actions": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "finish": "Finalizar",
+    "skip": "Saltar",
+    "confirm": "Confirmar",
+    "yes": "Sí",
+    "no": "No",
+    "ok": "Aceptar"
+  },
+  "status": {
+    "loading": "Cargando...",
+    "saving": "Guardando...",
+    "deleting": "Eliminando...",
+    "processing": "Procesando...",
+    "success": "Éxito",
+    "error": "Error",
+    "warning": "Advertencia",
+    "info": "Información"
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "email": "Debe ser un correo electrónico válido",
+    "min_length": "Debe tener al menos {{min}} caracteres",
+    "max_length": "Debe tener como máximo {{max}} caracteres",
+    "password_match": "Las contraseñas no coinciden",
+    "invalid_format": "Formato inválido"
+  },
+  "errors": {
+    "generic": "Ha ocurrido un error. Por favor, inténtalo de nuevo.",
+    "not_found": "Página no encontrada",
+    "unauthorized": "No tienes permiso para acceder",
+    "server_error": "Error del servidor",
+    "network_error": "Error de conexión"
+  }
+}

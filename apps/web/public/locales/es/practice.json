@@ -1,0 +1,58 @@
+{
+  "title": "Práctica",
+  "start_session": "Iniciar sesión",
+  "end_session": "Finalizar sesión",
+  "pause": "Pausar",
+  "resume": "Continuar",
+  "microphone": {
+    "title": "Configuración del micrófono",
+    "select": "Seleccionar micrófono",
+    "test": "Probar micrófono",
+    "permission": "Permiso de micrófono",
+    "no_permission": "Necesitas dar permiso para usar el micrófono",
+    "no_device": "No se encontró ningún micrófono"
+  },
+  "exercise": {
+    "title": "Ejercicio",
+    "type": "Tipo de ejercicio",
+    "difficulty": "Dificultad",
+    "duration": "Duración",
+    "repetitions": "Repeticiones",
+    "target_note": "Nota objetivo",
+    "instructions": "Instrucciones"
+  },
+  "feedback": {
+    "title": "Feedback",
+    "pitch_accuracy": "Precisión de afinación",
+    "pitch_stability": "Estabilidad de afinación",
+    "breath_support": "Soporte de aire",
+    "onset_control": "Control de ataque",
+    "consistency": "Consistencia",
+    "overall_score": "Puntuación general",
+    "excellent": "¡Excelente!",
+    "good": "Bien hecho",
+    "needs_improvement": "Necesita mejorar",
+    "keep_practicing": "Sigue practicando"
+  },
+  "realtime": {
+    "singing": "Cantando...",
+    "listening": "Escuchando...",
+    "analyzing": "Analizando...",
+    "pitch_detected": "Nota detectada: {{note}}",
+    "cents_off": "{{cents}} cents fuera",
+    "on_pitch": "¡Afinado!",
+    "flat": "Bajo",
+    "sharp": "Alto"
+  },
+  "results": {
+    "title": "Resultados",
+    "session_complete": "Sesión completada",
+    "score": "Puntuación: {{score}}",
+    "summary": "Resumen",
+    "weakness_detected": "Debilidad detectada: {{weakness}}",
+    "recommendation": "Recomendación",
+    "next_step": "Siguiente paso",
+    "share": "Compartir resultados",
+    "retry": "Repetir ejercicio"
+  }
+}

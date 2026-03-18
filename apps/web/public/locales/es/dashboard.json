@@ -1,0 +1,42 @@
+{
+  "title": "Dashboard",
+  "welcome": "Bienvenido/a, {{name}}",
+  "overview": "Resumen",
+  "today_task": "Tarea de hoy",
+  "start_practice": "Comenzar práctica",
+  "continue_practice": "Continuar práctica",
+  "weekly_progress": "Progreso semanal",
+  "recent_sessions": "Sesiones recientes",
+  "stats": {
+    "total_sessions": "Sesiones totales",
+    "total_time": "Tiempo total",
+    "current_streak": "Racha actual",
+    "best_streak": "Mejor racha",
+    "average_score": "Puntuación media",
+    "level": "Nivel {{level}}"
+  },
+  "goals": {
+    "title": "Objetivos",
+    "daily": "Objetivo diario",
+    "weekly": "Objetivo semanal",
+    "monthly": "Objetivo mensual",
+    "completed": "Completado",
+    "remaining": "Restante"
+  },
+  "weaknesses": {
+    "title": "Áreas a mejorar",
+    "primary": "Debilidad principal",
+    "secondary": "Debilidad secundaria",
+    "recommendation": "Recomendación"
+  },
+  "achievements": {
+    "title": "Logros",
+    "recent": "Logros recientes",
+    "view_all": "Ver todos"
+  },
+  "recommendations": {
+    "title": "Recomendaciones",
+    "next_exercise": "Siguiente ejercicio",
+    "focus_area": "Área de enfoque"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Biblioteca Vocal",
+  "techniques": {
+    "title": "Técnicas",
+    "search": "Buscar técnicas",
+    "categories": {
+      "breath": "Respiración",
+      "pitch": "Afinación",
+      "resonance": "Resonancia",
+      "range": "Rango vocal",
+      "agility": "Agilidad",
+      "strength": "Fortaleza vocal"
+    }
+  },
+  "exercises": {
+    "title": "Ejercicios",
+    "filter_by": "Filtrar por",
+    "difficulty": {
+      "beginner": "Principiante",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado"
+    },
+    "duration": {
+      "short": "Corto (< 5 min)",
+      "medium": "Medio (5-15 min)",
+      "long": "Largo (> 15 min)"
+    }
+  },
+  "articles": {
+    "title": "Artículos",
+    "recommended": "Recomendados para ti",
+    "recent": "Recientes",
+    "popular": "Populares"
+  },
+  "progress": {
+    " mastered": "Dominado",
+    "in_progress": "En progreso",
+    "not_started": "No comenzado"
+  }
+}
