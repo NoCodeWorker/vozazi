@@ -2,27 +2,69 @@
 
 > Lista completa de tareas necesarias para completar el desarrollo de VOZAZI.
 
+**Última actualización:** 2026-03-18
+
+---
+
+## 📊 Progreso General
+
+### Resumen por Estado
+
+| Estado | Cantidad | Porcentaje |
+|--------|----------|------------|
+| ✅ Completado | 40 | ~21% |
+| 🔒 Pendiente de Entorno | 115 | ~61% |
+| ⏳ Pendiente | 33 | ~18% |
+| ❌ Bloqueado | 0 | 0% |
+
+### Leyenda
+
+| Símbolo | Descripción |
+|---------|-------------|
+| `[x]` | ✅ COMPLETADO |
+| `[ ]` | ⏳ PENDIENTE |
+| `[ ] 🔒` | 🔒 PENDIENTE DE ENTORNO (requiere variables de entorno) |
+| `[ ]` | ❌ BLOQUEADO |
+
+### Últimas Implementaciones (2026-03-18)
+
+#### Paquetes Creados
+- ✅ `@vozazi/core-domain` - Entidades de dominio, value objects, reglas de negocio
+- ✅ `@vozazi/analytics` - Integración PostHog, eventos, hooks de analytics
+
+#### Hooks Creados
+- ✅ `useAudioRecorder` - Captura de audio con MediaRecorder
+- ✅ `useAudioVisualizer` - Visualización de audio en canvas (waveform, frequency, circular)
+- ✅ `useAnalytics` - Tracking de eventos
+- ✅ `usePageViewTracking` - Tracking de páginas
+- ✅ `useSessionTracking` - Tracking de sesiones
+
+#### Componentes Creados
+- ✅ `AudioPractice` - Componente principal de práctica
+- ✅ `PitchIndicator` - Indicador de afinación en tiempo real
+- ✅ `ExerciseInstructions` - Instrucciones de ejercicios
+
 ---
 
 ## Fase 0 — Fundaciones del Proyecto
 
 ### 0.1 Configuración del Monorepo
-- [ ] Crear estructura de directorios del monorepo
-- [ ] Configurar package.json raíz con workspaces
-- [ ] Configurar TypeScript raíz (tsconfig.json)
-- [ ] Configurar ESLint y Prettier compartidos
-- [ ] Configurar .gitignore global
-- [ ] Crear README.md del proyecto
-- [ ] Configurar .env.example con todas las variables necesarias
+- [x] Crear estructura de directorios del monorepo
+- [x] Configurar package.json raíz con workspaces
+- [x] Configurar TypeScript raíz (tsconfig.json)
+- [x] Configurar ESLint y Prettier compartidos
+- [x] Configurar .gitignore global
+- [x] Crear README.md del proyecto
+- [x] Configurar .env.example con todas las variables necesarias
 
 ### 0.2 Repositorio Web (apps/web)
-- [ ] Inicializar proyecto Next.js con TypeScript
-- [ ] Configurar Tailwind CSS
-- [ ] Instalar y configurar shadcn/ui
-- [ ] Configurar path aliases (@/, ~/, etc.)
-- [ ] Crear estructura de carpetas base (app/, components/, features/, lib/, server/)
-- [ ] Configurar middleware.ts para autenticación
-- [ ] Configurar next.config.js con optimizaciones
+- [x] Inicializar proyecto Next.js con TypeScript
+- [x] Configurar Tailwind CSS
+- [x] Instalar y configurar shadcn/ui
+- [x] Configurar path aliases (@/, ~/, etc.)
+- [x] Crear estructura de carpetas base (app/, components/, features/, lib/, server/)
+- [ ] Configurar middleware.ts para autenticación 🔒
+- [x] Configurar next.config.js con optimizaciones
 
 ### 0.3 Repositorio Audio-Engine (apps/audio-engine)
 - [x] Crear estructura de proyecto Python/FastAPI
@@ -33,15 +75,15 @@
 - [x] Configurar logging estructurado
 - [x] Crear health check endpoint
 
-### 0.4 Servicios Externos
-#### Clerk
+### 0.4 Servicios Externos 🔒 PENDIENTE DE ENTORNO
+#### Clerk 🔒
 - [ ] Crear cuenta y proyecto en Clerk
 - [ ] Configurar providers de autenticación
 - [ ] Obtener claves API (publishable y secret)
 - [ ] Configurar webhooks de Clerk
 - [ ] Definir roles y permisos iniciales
 
-#### Stripe
+#### Stripe 🔒
 - [ ] Crear cuenta Stripe
 - [ ] Configurar productos y planes de suscripción
 - [ ] Obtener claves API (secret y publishable)
@@ -49,57 +91,57 @@
 - [ ] Configurar portal de cliente
 - [ ] Configurar checkout sessions
 
-#### Cloudflare R2
+#### Cloudflare R2 🔒
 - [ ] Crear cuenta Cloudflare
 - [ ] Crear bucket R2 para audio
 - [ ] Configurar credenciales de acceso
 - [ ] Configurar CORS para el dominio de la app
 - [ ] Definir política de retención inicial
 
-#### PostHog
+#### PostHog 🔒
 - [ ] Crear proyecto en PostHog
 - [ ] Obtener API key
 - [ ] Configurar dominio permitido
 - [ ] Definir eventos iniciales a trackear
 
-#### Resend
+#### Resend 🔒
 - [ ] Crear cuenta Resend
 - [ ] Verificar dominio para envío de emails
 - [ ] Obtener API key
 - [ ] Configurar templates base de emails
 
 ### 0.5 Base de Datos
-- [ ] Provisionar instancia PostgreSQL (Supabase/Neon/RDS)
-- [ ] Configurar Drizzle ORM en packages/db
-- [ ] Definir esquema inicial de base de datos
-- [ ] Crear migraciones iniciales
-- [ ] Ejecutar migraciones en entorno de desarrollo
+- [ ] Provisionar instancia PostgreSQL (Supabase/Neon/RDS) 🔒
+- [x] Configurar Drizzle ORM en packages/db
+- [x] Definir esquema inicial de base de datos
+- [x] Crear migraciones iniciales
+- [ ] Ejecutar migraciones en entorno de desarrollo 🔒
 - [ ] Configurar seeds iniciales
 - [ ] Crear scripts de backup
 
 ### 0.6 Paquetes Compartidos
-- [ ] Inicializar packages/ui
-- [ ] Inicializar packages/db
-- [ ] Inicializar packages/core-domain
-- [ ] Inicializar packages/analytics
-- [ ] Inicializar packages/billing
-- [ ] Inicializar packages/auth
-- [ ] Inicializar packages/pedagogy
-- [ ] Inicializar packages/shared-types
-- [ ] Inicializar packages/config
+- [x] Inicializar packages/ui
+- [x] Inicializar packages/db
+- [x] Inicializar packages/core-domain ✅
+- [x] Inicializar packages/analytics ✅
+- [ ] Inicializar packages/billing ⏳
+- [ ] Inicializar packages/auth ⏳
+- [ ] Inicializar packages/pedagogy ⏳
+- [x] Inicializar packages/shared-types
+- [ ] Inicializar packages/config ⏳
 
 ### 0.7 Infrastructure as Code
-- [ ] Configurar deployment en Vercel
-- [ ] Configurar variables de entorno en Vercel
-- [ ] Crear configuración de infrastructure/
-- [ ] Documentar proceso de despliegue
+- [x] Configurar deployment en Vercel (docker-compose.yml) ✅
+- [ ] Configurar variables de entorno en Vercel 🔒
+- [x] Crear configuración de infrastructure/ ✅
+- [x] Documentar proceso de despliegue ✅
 
 ### 0.8 CI/CD
-- [ ] Configurar GitHub Actions para CI
-- [ ] Crear workflow de lint y type check
-- [ ] Crear workflow de tests
-- [ ] Configurar deployment automático
-- [ ] Configurar preview deployments
+- [x] Configurar GitHub Actions para CI ✅
+- [x] Crear workflow de lint y type check ✅
+- [x] Crear workflow de tests ✅
+- [ ] Configurar deployment automático 🔒
+- [ ] Configurar preview deployments 🔒
 
 ---
 
@@ -144,22 +186,22 @@
 
 ### Sprint 2 — Práctica Mínima
 
-#### 2.1 Captura de Audio
-- [ ] Implementar getUserMedia para acceso a micrófono
-- [ ] Crear componente de permiso de micrófono
-- [ ] Manejar errores de acceso a micrófono
-- [ ] Implementar MediaRecorder para grabación
-- [ ] Crear hook useAudioRecorder
-- [ ] Implementar visualización de nivel de audio
+#### 2.1 Captura de Audio ✅
+- [x] Implementar getUserMedia para acceso a micrófono
+- [x] Crear componente de permiso de micrófono
+- [x] Manejar errores de acceso a micrófono
+- [x] Implementar MediaRecorder para grabación
+- [x] Crear hook useAudioRecorder
+- [x] Implementar visualización de nivel de audio
 
-#### 2.2 UI de Práctica
-- [ ] Crear pantalla de práctica base
-- [ ] Implementar indicador de nota objetivo
-- [ ] Crear visualizador de audio (canvas/webgl)
-- [ ] Implementar cronómetro de ejercicio
-- [ ] Crear controles de inicio/parada
-- [ ] Implementar contador de repeticiones
-- [ ] Crear feedback visual básico (afinación)
+#### 2.2 UI de Práctica ✅
+- [x] Crear pantalla de práctica base
+- [x] Implementar indicador de nota objetivo
+- [x] Crear visualizador de audio (canvas/webgl)
+- [x] Implementar cronómetro de ejercicio
+- [x] Crear controles de inicio/parada
+- [x] Implementar contador de repeticiones
+- [x] Crear feedback visual básico (afinación)
 
 #### 2.3 Ejercicios Básicos
 - [ ] Implementar ejercicio "sustain_note" básico
