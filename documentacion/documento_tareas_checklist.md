@@ -1,73 +1,73 @@
-# VOZAZI — Documento de Tareas y Checklist de Desarrollo
+﻿# VOZAZI â€” Documento de Tareas y Checklist de Desarrollo
 
 > Lista completa de tareas necesarias para completar el desarrollo de VOZAZI.
 
-**Última actualización:** 2026-03-18
+**Ãšltima actualizaciÃ³n:** 2026-03-18
 
 ---
 
-## 📊 Progreso General
+## ðŸ“Š Progreso General
 
 ### Resumen por Estado
 
 | Estado | Cantidad | Porcentaje |
 |--------|----------|------------|
-| ✅ Completado | 40 | ~21% |
-| 🔒 Pendiente de Entorno | 115 | ~61% |
-| ⏳ Pendiente | 33 | ~18% |
-| ❌ Bloqueado | 0 | 0% |
+| âœ… Completado | 40 | ~21% |
+| ðŸ”’ Pendiente de Entorno | 115 | ~61% |
+| â³ Pendiente | 33 | ~18% |
+| âŒ Bloqueado | 0 | 0% |
 
 ### Leyenda
 
-| Símbolo | Estado | Descripción |
+| SÃ­mbolo | Estado | DescripciÃ³n |
 |---------|--------|-------------|
-| `[x]` | ✅ **Completado** | Tarea implementada |
-| `[ ]` | 🟢 **Pendiente** | Tarea que **SE PUEDE implementar** (no requiere entorno) |
-| `[ ] 🔒` | 🔴 **Pendiente de Entorno** | Tarea **BLOQUEADA** (requiere variables de entorno/servicios) |
-| `[ ]` | 🟡 **En Progreso** | Tarea siendo implementada |
+| `[x]` | âœ… **Completado** | Tarea implementada |
+| `[ ]` | ðŸŸ¢ **Pendiente** | Tarea que **SE PUEDE implementar** (no requiere entorno) |
+| `[ ] ðŸ”’` | ðŸ”´ **Pendiente de Entorno** | Tarea **BLOQUEADA** (requiere variables de entorno/servicios) |
+| `[ ]` | ðŸŸ¡ **En Progreso** | Tarea siendo implementada |
 
 ### Estados Detallados
 
-**🟢 Pendiente (33 tareas - ~18%)**
+**ðŸŸ¢ Pendiente (33 tareas - ~18%)**
 - Se pueden implementar inmediatamente
-- No requieren configuración externa
-- Ejemplos: UI components, hooks, lógica de frontend, tests
+- No requieren configuraciÃ³n externa
+- Ejemplos: UI components, hooks, lÃ³gica de frontend, tests
 
-**🔒 Pendiente de Entorno (115 tareas - ~61%)**
+**ðŸ”’ Pendiente de Entorno (115 tareas - ~61%)**
 - Requieren servicios externos configurados
 - Necesitan variables de entorno
 - Servicios: Clerk, Stripe, R2, PostHog, Resend, PostgreSQL
 
-**✅ Completado (40 tareas - ~21%)**
-- Ya implementadas y en producción
-- Incluyen: monorepo, audio-engine, tests, UI de práctica
+**âœ… Completado (40 tareas - ~21%)**
+- Ya implementadas y en producciÃ³n
+- Incluyen: monorepo, audio-engine, tests, UI de prÃ¡ctica
 
-### Últimas Implementaciones (2026-03-18)
+### Ãšltimas Implementaciones (2026-03-18)
 
 #### Paquetes Creados
-- ✅ `@vozazi/core-domain` - Entidades de dominio, value objects, reglas de negocio
-- ✅ `@vozazi/analytics` - Integración PostHog, eventos, hooks de analytics
+- âœ… `@vozazi/core-domain` - Entidades de dominio, value objects, reglas de negocio
+- âœ… `@vozazi/analytics` - IntegraciÃ³n PostHog, eventos, hooks de analytics
 
 #### Hooks Creados
-- ✅ `useAudioRecorder` - Captura de audio con MediaRecorder
-- ✅ `useAudioVisualizer` - Visualización de audio en canvas (waveform, frequency, circular)
-- ✅ `useAnalytics` - Tracking de eventos
-- ✅ `usePageViewTracking` - Tracking de páginas
-- ✅ `useSessionTracking` - Tracking de sesiones
+- âœ… `useAudioRecorder` - Captura de audio con MediaRecorder
+- âœ… `useAudioVisualizer` - VisualizaciÃ³n de audio en canvas (waveform, frequency, circular)
+- âœ… `useAnalytics` - Tracking de eventos
+- âœ… `usePageViewTracking` - Tracking de pÃ¡ginas
+- âœ… `useSessionTracking` - Tracking de sesiones
 
 #### Componentes Creados
-- ✅ `AudioPractice` - Componente principal de práctica
-- ✅ `PitchIndicator` - Indicador de afinación en tiempo real
-- ✅ `ExerciseInstructions` - Instrucciones de ejercicios
+- âœ… `AudioPractice` - Componente principal de prÃ¡ctica
+- âœ… `PitchIndicator` - Indicador de afinaciÃ³n en tiempo real
+- âœ… `ExerciseInstructions` - Instrucciones de ejercicios
 
 ---
 
-## Fase 0 — Fundaciones del Proyecto
+## Fase 0 â€” Fundaciones del Proyecto
 
-### 0.1 Configuración del Monorepo
+### 0.1 ConfiguraciÃ³n del Monorepo
 - [x] Crear estructura de directorios del monorepo
-- [x] Configurar package.json raíz con workspaces
-- [x] Configurar TypeScript raíz (tsconfig.json)
+- [x] Configurar package.json raÃ­z con workspaces
+- [x] Configurar TypeScript raÃ­z (tsconfig.json)
 - [x] Configurar ESLint y Prettier compartidos
 - [x] Configurar .gitignore global
 - [x] Crear README.md del proyecto
@@ -79,105 +79,105 @@
 - [x] Instalar y configurar shadcn/ui
 - [x] Configurar path aliases (@/, ~/, etc.)
 - [x] Crear estructura de carpetas base (app/, components/, features/, lib/, server/)
-- [ ] Configurar middleware.ts para autenticación 🔒
+- [ ] Configurar middleware.ts para autenticaciÃ³n ðŸ”’
 - [x] Configurar next.config.js con optimizaciones
 
 ### 0.3 Repositorio Audio-Engine (apps/audio-engine)
 - [x] Crear estructura de proyecto Python/FastAPI
 - [x] Configurar requirements.txt con dependencias base
 - [x] Configurar entorno virtual Python
-- [x] Crear main.py con configuración FastAPI
-- [x] Configurar CORS para comunicación con web
+- [x] Crear main.py con configuraciÃ³n FastAPI
+- [x] Configurar CORS para comunicaciÃ³n con web
 - [x] Configurar logging estructurado
 - [x] Crear health check endpoint
 
-### 0.4 Servicios Externos 🔒 PENDIENTE DE ENTORNO
-#### Clerk 🔒
+### 0.4 Servicios Externos ðŸ”’ PENDIENTE DE ENTORNO
+#### Clerk ðŸ”’
 - [ ] Crear cuenta y proyecto en Clerk
-- [ ] Configurar providers de autenticación
+- [ ] Configurar providers de autenticaciÃ³n
 - [ ] Obtener claves API (publishable y secret)
 - [ ] Configurar webhooks de Clerk
 - [ ] Definir roles y permisos iniciales
 
-#### Stripe 🔒
+#### Stripe ðŸ”’
 - [ ] Crear cuenta Stripe
-- [ ] Configurar productos y planes de suscripción
+- [ ] Configurar productos y planes de suscripciÃ³n
 - [ ] Obtener claves API (secret y publishable)
 - [ ] Configurar webhook endpoint
 - [ ] Configurar portal de cliente
 - [ ] Configurar checkout sessions
 
-#### Cloudflare R2 🔒
+#### Cloudflare R2 ðŸ”’
 - [ ] Crear cuenta Cloudflare
 - [ ] Crear bucket R2 para audio
 - [ ] Configurar credenciales de acceso
 - [ ] Configurar CORS para el dominio de la app
-- [ ] Definir política de retención inicial
+- [ ] Definir polÃ­tica de retenciÃ³n inicial
 
-#### PostHog 🔒
+#### PostHog ðŸ”’
 - [ ] Crear proyecto en PostHog
 - [ ] Obtener API key
 - [ ] Configurar dominio permitido
 - [ ] Definir eventos iniciales a trackear
 
-#### Resend 🔒
+#### Resend ðŸ”’
 - [ ] Crear cuenta Resend
-- [ ] Verificar dominio para envío de emails
+- [ ] Verificar dominio para envÃ­o de emails
 - [ ] Obtener API key
 - [ ] Configurar templates base de emails
 
 ### 0.5 Base de Datos
-- [ ] Provisionar instancia PostgreSQL (Supabase/Neon/RDS) 🔒
+- [ ] Provisionar instancia PostgreSQL (Supabase/Neon/RDS) ðŸ”’
 - [x] Configurar Drizzle ORM en packages/db
 - [x] Definir esquema inicial de base de datos
 - [x] Crear migraciones iniciales
-- [ ] Ejecutar migraciones en entorno de desarrollo 🔒
+- [ ] Ejecutar migraciones en entorno de desarrollo ðŸ”’
 - [ ] Configurar seeds iniciales
 - [ ] Crear scripts de backup
 
 ### 0.6 Paquetes Compartidos
 - [x] Inicializar packages/ui
 - [x] Inicializar packages/db
-- [x] Inicializar packages/core-domain ✅
-- [x] Inicializar packages/analytics ✅
-- [ ] Inicializar packages/billing ⏳
-- [ ] Inicializar packages/auth ⏳
-- [ ] Inicializar packages/pedagogy ⏳
+- [x] Inicializar packages/core-domain âœ…
+- [x] Inicializar packages/analytics âœ…
+- [ ] Inicializar packages/billing â³
+- [ ] Inicializar packages/auth â³
+- [ ] Inicializar packages/pedagogy â³
 - [x] Inicializar packages/shared-types
-- [ ] Inicializar packages/config ⏳
+- [ ] Inicializar packages/config â³
 
 ### 0.7 Infrastructure as Code
-- [x] Configurar deployment en Vercel (docker-compose.yml) ✅
-- [ ] Configurar variables de entorno en Vercel 🔒
-- [x] Crear configuración de infrastructure/ ✅
-- [x] Documentar proceso de despliegue ✅
+- [x] Configurar deployment en Vercel (docker-compose.yml) âœ…
+- [ ] Configurar variables de entorno en Vercel ðŸ”’
+- [x] Crear configuraciÃ³n de infrastructure/ âœ…
+- [x] Documentar proceso de despliegue âœ…
 
 ### 0.8 CI/CD
-- [x] Configurar GitHub Actions para CI ✅
-- [x] Crear workflow de lint y type check ✅
-- [x] Crear workflow de tests ✅
-- [ ] Configurar deployment automático 🔒
-- [ ] Configurar preview deployments 🔒
+- [x] Configurar GitHub Actions para CI âœ…
+- [x] Crear workflow de lint y type check âœ…
+- [x] Crear workflow de tests âœ…
+- [ ] Configurar deployment automÃ¡tico ðŸ”’
+- [ ] Configurar preview deployments ðŸ”’
 
 ---
 
-## Fase 1 — Vertical Slice del Producto
+## Fase 1 â€” Vertical Slice del Producto
 
-### Sprint 1 — App Shell
+### Sprint 1 â€” App Shell
 
-#### 1.1 Autenticación
+#### 1.1 AutenticaciÃ³n
 - [ ] Integrar Clerk en apps/web
-- [ ] Crear página de login
-- [ ] Crear página de signup
-- [ ] Crear página de password reset
-- [ ] Implementar protección de rutas privadas
-- [ ] Implementar redirección post-login
+- [ ] Crear pÃ¡gina de login
+- [ ] Crear pÃ¡gina de signup
+- [ ] Crear pÃ¡gina de password reset
+- [ ] Implementar protecciÃ³n de rutas privadas
+- [ ] Implementar redirecciÃ³n post-login
 - [ ] Crear componente UserButton para mostrar usuario
 
 #### 1.2 Layout Principal
-- [ ] Crear layout base con navegación
-- [ ] Implementar header con logo y menú
-- [ ] Implementar sidebar de navegación
+- [ ] Crear layout base con navegaciÃ³n
+- [ ] Implementar header con logo y menÃº
+- [ ] Implementar sidebar de navegaciÃ³n
 - [ ] Crear footer
 - [ ] Implementar responsive design
 - [ ] Crear componente de loading global
@@ -189,10 +189,10 @@
 - [ ] Crear ruta /library (stub)
 - [ ] Crear ruta /billing (stub)
 - [ ] Crear ruta /settings (stub)
-- [ ] Implementar navegación entre rutas
+- [ ] Implementar navegaciÃ³n entre rutas
 
 #### 1.4 Onboarding Inicial
-- [ ] Crear flujo de onboarding básico
+- [ ] Crear flujo de onboarding bÃ¡sico
 - [ ] Implementar paso de bienvenida
 - [ ] Implementar paso de objetivo principal
 - [ ] Implementar paso de nivel autopercibido
@@ -200,56 +200,56 @@
 - [ ] Guardar datos de onboarding en BD
 - [ ] Redirigir a dashboard post-onboarding
 
-### Sprint 2 — Práctica Mínima
+### Sprint 2 â€” PrÃ¡ctica MÃ­nima
 
-#### 2.1 Captura de Audio ✅
-- [x] Implementar getUserMedia para acceso a micrófono
-- [x] Crear componente de permiso de micrófono
-- [x] Manejar errores de acceso a micrófono
-- [x] Implementar MediaRecorder para grabación
+#### 2.1 Captura de Audio âœ…
+- [x] Implementar getUserMedia para acceso a micrÃ³fono
+- [x] Crear componente de permiso de micrÃ³fono
+- [x] Manejar errores de acceso a micrÃ³fono
+- [x] Implementar MediaRecorder para grabaciÃ³n
 - [x] Crear hook useAudioRecorder
-- [x] Implementar visualización de nivel de audio
+- [x] Implementar visualizaciÃ³n de nivel de audio
 
-#### 2.2 UI de Práctica ✅
-- [x] Crear pantalla de práctica base
+#### 2.2 UI de PrÃ¡ctica âœ…
+- [x] Crear pantalla de prÃ¡ctica base
 - [x] Implementar indicador de nota objetivo
 - [x] Crear visualizador de audio (canvas/webgl)
-- [x] Implementar cronómetro de ejercicio
+- [x] Implementar cronÃ³metro de ejercicio
 - [x] Crear controles de inicio/parada
 - [x] Implementar contador de repeticiones
-- [x] Crear feedback visual básico (afinación)
+- [x] Crear feedback visual bÃ¡sico (afinaciÃ³n)
 
-#### 2.3 Ejercicios Básicos
-- [ ] Implementar ejercicio "sustain_note" básico
-- [ ] Implementar ejercicio "pitch_target" básico
+#### 2.3 Ejercicios BÃ¡sicos
+- [ ] Implementar ejercicio "sustain_note" bÃ¡sico
+- [ ] Implementar ejercicio "pitch_target" bÃ¡sico
 - [ ] Crear instrucciones por ejercicio
-- [ ] Implementar transición entre ejercicios
+- [ ] Implementar transiciÃ³n entre ejercicios
 - [ ] Crear resumen post-ejercicio
 
-#### 2.4 Estado de Sesión
-- [ ] Implementar gestión de estado de sesión
+#### 2.4 Estado de SesiÃ³n
+- [ ] Implementar gestiÃ³n de estado de sesiÃ³n
 - [ ] Crear hook useSessionState
 - [ ] Implementar estados: idle, preparing, recording, processing, completed
-- [ ] Manejar errores de sesión
-- [ ] Implementar cancelación de sesión
+- [ ] Manejar errores de sesiÃ³n
+- [ ] Implementar cancelaciÃ³n de sesiÃ³n
 
-### Sprint 3 — Persistencia Mínima
+### Sprint 3 â€” Persistencia MÃ­nima
 
 #### 3.1 Backend de Sesiones
-- [ ] Crear Server Action para iniciar sesión
-- [ ] Crear Server Action para cerrar sesión
+- [ ] Crear Server Action para iniciar sesiÃ³n
+- [ ] Crear Server Action para cerrar sesiÃ³n
 - [ ] Implementar persistencia en PostgreSQL
 - [ ] Guardar referencia a audio en R2
 - [ ] Implementar upload de audio a Cloudflare R2
 - [ ] Crear endpoint para subir audio chunk
 
-#### 3.2 Reporte Post-Sesión
-- [ ] Crear pantalla de resultado de sesión
-- [ ] Mostrar duración total
+#### 3.2 Reporte Post-SesiÃ³n
+- [ ] Crear pantalla de resultado de sesiÃ³n
+- [ ] Mostrar duraciÃ³n total
 - [ ] Mostrar ejercicios completados
-- [ ] Mostrar métricas básicas
-- [ ] Implementar botón "Practicar de nuevo"
-- [ ] Implementar botón "Volver al dashboard"
+- [ ] Mostrar mÃ©tricas bÃ¡sicas
+- [ ] Implementar botÃ³n "Practicar de nuevo"
+- [ ] Implementar botÃ³n "Volver al dashboard"
 
 #### 3.3 Analytics
 - [ ] Integrar PostHog en apps/web
@@ -262,18 +262,18 @@
   - [ ] session_completed
 - [ ] Configurar identidad de usuario en PostHog
 
-#### 3.4 Dashboard Básico
+#### 3.4 Dashboard BÃ¡sico
 - [ ] Crear dashboard con resumen de actividad
-- [ ] Mostrar últimas sesiones
-- [ ] Mostrar estadísticas básicas (tiempo, sesiones)
-- [ ] Implementar botón "Comenzar práctica"
-- [ ] Mostrar próxima tarea si existe
+- [ ] Mostrar Ãºltimas sesiones
+- [ ] Mostrar estadÃ­sticas bÃ¡sicas (tiempo, sesiones)
+- [ ] Implementar botÃ³n "Comenzar prÃ¡ctica"
+- [ ] Mostrar prÃ³xima tarea si existe
 
 ---
 
-## Fase 2 — Motor Acústico Inicial Serio
+## Fase 2 â€” Motor AcÃºstico Inicial Serio
 
-### Sprint 4 — Audio Engine Base
+### Sprint 4 â€” Audio Engine Base
 
 #### 4.1 Infraestructura FastAPI
 - [x] Configurar FastAPI con estructura de routers
@@ -282,124 +282,124 @@
 - [ ] Implementar endpoint /api/v1/analysis
 - [ ] Implementar endpoint /api/v1/scoring
 - [x] Configurar WebSocket para /ws/session
-- [ ] Implementar autenticación entre web y audio-engine
+- [ ] Implementar autenticaciÃ³n entre web y audio-engine
 
-#### 4.2 Contrato de Comunicación
+#### 4.2 Contrato de ComunicaciÃ³n
 - [ ] Definir esquema de request/response
 - [ ] Crear tipos compartidos en packages/shared-types
 - [ ] Implementar cliente HTTP desde web hacia audio-engine
 - [ ] Implementar cliente WebSocket para tiempo real
 - [ ] Configurar retries y timeouts
-- [ ] Implementar manejo de errores de conexión
+- [ ] Implementar manejo de errores de conexiÃ³n
 
 #### 4.3 Logging y Observabilidad
 - [x] Configurar logging estructurado en audio-engine
-- [ ] Implementar logs de sesión iniciada
+- [ ] Implementar logs de sesiÃ³n iniciada
 - [ ] Implementar logs de chunk recibido
-- [ ] Implementar logs de análisis completado
-- [ ] Configurar correlación de logs por session_id
+- [ ] Implementar logs de anÃ¡lisis completado
+- [ ] Configurar correlaciÃ³n de logs por session_id
 
-### Sprint 5 — Pipeline Inicial
+### Sprint 5 â€” Pipeline Inicial
 
-#### 5.1 Ingestión de Audio
+#### 5.1 IngestiÃ³n de Audio
 - [ ] Implementar Audio Ingestion Service
 - [ ] Validar formato de audio recibido
-- [ ] Implementar normalización de audio
-- [ ] Configurar chunking de audio (200-500ms feedback, 1-3s análisis)
+- [ ] Implementar normalizaciÃ³n de audio
+- [ ] Configurar chunking de audio (200-500ms feedback, 1-3s anÃ¡lisis)
 - [ ] Implementar almacenamiento temporal de chunks
 - [ ] Configurar limpieza de archivos temporales
 
 #### 5.2 Preprocesamiento
-- [ ] Implementar filtro de ruido básico
-- [ ] Configurar RNNoise para reducción de ruido
-- [ ] Implementar Silero VAD para detección de voz
+- [ ] Implementar filtro de ruido bÃ¡sico
+- [ ] Configurar RNNoise para reducciÃ³n de ruido
+- [ ] Implementar Silero VAD para detecciÃ³n de voz
 - [ ] Segmentar audio en partes con voz activa
-- [ ] Normalizar niveles de señal
+- [ ] Normalizar niveles de seÃ±al
 
 #### 5.3 Pitch Tracking
 - [ ] Integrar torchcrepe para pitch detection
 - [ ] Configurar modelo torchcrepe (full/fast)
-- [ ] Implementar extracción de pitch por frame
+- [ ] Implementar extracciÃ³n de pitch por frame
 - [ ] Calcular nota detectada desde frecuencia
-- [ ] Calcular desviación en cents
-- [ ] Implementar suavizado de señal de pitch
+- [ ] Calcular desviaciÃ³n en cents
+- [ ] Implementar suavizado de seÃ±al de pitch
 
-#### 5.4 Métricas Básicas
-- [ ] Implementar cálculo de pitch_accuracy
-- [ ] Implementar cálculo de pitch_stability
+#### 5.4 MÃ©tricas BÃ¡sicas
+- [ ] Implementar cÃ¡lculo de pitch_accuracy
+- [ ] Implementar cÃ¡lculo de pitch_stability
 - [ ] Calcular variance de pitch
-- [ ] Implementar métricas por repetición
-- [ ] Agregar métricas por ejercicio
-- [ ] Retornar métricas en formato estructurado
+- [ ] Implementar mÃ©tricas por repeticiÃ³n
+- [ ] Agregar mÃ©tricas por ejercicio
+- [ ] Retornar mÃ©tricas en formato estructurado
 
-### Sprint 6 — Score Inicial
+### Sprint 6 â€” Score Inicial
 
 #### 6.1 Scoring Engine
 - [ ] Implementar Evaluation Engine
-- [ ] Configurar fórmula de scoring base:
+- [ ] Configurar fÃ³rmula de scoring base:
   - 40% pitch_accuracy
   - 20% pitch_stability
   - 15% onset_control
   - 15% breath_support
   - 10% consistency
-- [ ] Implementar cálculo de score por ejercicio
-- [ ] Implementar cálculo de score por sesión
+- [ ] Implementar cÃ¡lculo de score por ejercicio
+- [ ] Implementar cÃ¡lculo de score por sesiÃ³n
 - [ ] Normalizar scores a escala 0-100
 
-#### 6.2 Detección de Debilidades
-- [ ] Implementar detección de dominant_weakness
-- [ ] Implementar detección de secondary_weakness
-- [ ] Clasificar error técnico detectado
+#### 6.2 DetecciÃ³n de Debilidades
+- [ ] Implementar detecciÃ³n de dominant_weakness
+- [ ] Implementar detecciÃ³n de secondary_weakness
+- [ ] Clasificar error tÃ©cnico detectado
 - [ ] Generar adaptive_decision inicial
 
-#### 6.3 Persistencia de Evaluación
+#### 6.3 Persistencia de EvaluaciÃ³n
 - [ ] Guardar evaluation_results en PostgreSQL
 - [ ] Vincular con session y segment
-- [ ] Guardar métricas en session_metrics
-- [ ] Implementar consulta de resultados por sesión
+- [ ] Guardar mÃ©tricas en session_metrics
+- [ ] Implementar consulta de resultados por sesiÃ³n
 
 #### 6.4 UI de Score
-- [ ] Mostrar score en reporte post-sesión
-- [ ] Crear visualización de score por dimensión
+- [ ] Mostrar score en reporte post-sesiÃ³n
+- [ ] Crear visualizaciÃ³n de score por dimensiÃ³n
 - [ ] Implementar indicador de debilidad dominante
 - [ ] Mostrar mensaje explicativo del score
 
 ---
 
-## Fase 3 — Progreso y Memoria del Producto
+## Fase 3 â€” Progreso y Memoria del Producto
 
-### Sprint 7 — Historial
+### Sprint 7 â€” Historial
 
 #### 7.1 Lista de Sesiones
-- [ ] Crear página /history
-- [ ] Implementar lista de sesiones con paginación
-- [ ] Mostrar fecha, duración, score por sesión
+- [ ] Crear pÃ¡gina /history
+- [ ] Implementar lista de sesiones con paginaciÃ³n
+- [ ] Mostrar fecha, duraciÃ³n, score por sesiÃ³n
 - [ ] Implementar filtros por fecha
 - [ ] Implementar ordenamiento por fecha/score
-- [ ] Crear estado vacío (no sessions yet)
+- [ ] Crear estado vacÃ­o (no sessions yet)
 
-#### 7.2 Detalle de Sesión
-- [ ] Crear página /history/[session_id]
-- [ ] Mostrar información completa de sesión
+#### 7.2 Detalle de SesiÃ³n
+- [ ] Crear pÃ¡gina /history/[session_id]
+- [ ] Mostrar informaciÃ³n completa de sesiÃ³n
 - [ ] Mostrar ejercicios realizados
-- [ ] Mostrar métricas por ejercicio
-- [ ] Mostrar evaluación completa
-- [ ] Implementar botón para reproducir audio (si existe)
+- [ ] Mostrar mÃ©tricas por ejercicio
+- [ ] Mostrar evaluaciÃ³n completa
+- [ ] Implementar botÃ³n para reproducir audio (si existe)
 
-#### 7.3 Gráficos Básicos
-- [ ] Integrar librería de gráficos (recharts/chart.js)
-- [ ] Crear gráfico de evolución de score
-- [ ] Crear gráfico de sesiones por semana
+#### 7.3 GrÃ¡ficos BÃ¡sicos
+- [ ] Integrar librerÃ­a de grÃ¡ficos (recharts/chart.js)
+- [ ] Crear grÃ¡fico de evoluciÃ³n de score
+- [ ] Crear grÃ¡fico de sesiones por semana
 - [ ] Implementar tooltips informativos
-- [ ] Hacer gráficos responsive
+- [ ] Hacer grÃ¡ficos responsive
 
-### Sprint 8 — Progress Service
+### Sprint 8 â€” Progress Service
 
 #### 8.1 Snapshots Semanales
 - [ ] Implementar Progress Service
 - [ ] Crear job para generar snapshot semanal
 - [ ] Calcular overall_score semanal
-- [ ] Calcular tendencias por dimensión
+- [ ] Calcular tendencias por dimensiÃ³n
 - [ ] Identificar dominant_weakness de la semana
 - [ ] Identificar strong_skill de la semana
 - [ ] Guardar snapshot en progress_snapshots
@@ -412,39 +412,39 @@
 
 #### 8.3 Skill Dimensions
 - [ ] Definir dimensiones de skill a trackear
-- [ ] Implementar cálculo de score por dimensión
+- [ ] Implementar cÃ¡lculo de score por dimensiÃ³n
 - [ ] Crear UI de skill cards en dashboard
-- [ ] Mostrar progreso por dimensión
+- [ ] Mostrar progreso por dimensiÃ³n
 
-### Sprint 9 — Modelo Longitudinal
+### Sprint 9 â€” Modelo Longitudinal
 
 #### 9.1 Comparativas
-- [ ] Implementar comparación entre sesiones
+- [ ] Implementar comparaciÃ³n entre sesiones
 - [ ] Comparar semana actual vs anterior
 - [ ] Comparar mes actual vs anterior
 - [ ] Calcular delta de mejora/empeoramiento
 
 #### 9.2 Tendencias
-- [ ] Implementar cálculo de tendencias (improving, stable, declining)
+- [ ] Implementar cÃ¡lculo de tendencias (improving, stable, declining)
 - [ ] Mostrar tendencias en dashboard
 - [ ] Implementar alertas de estancamiento
 - [ ] Implementar alertas de mejora significativa
 
 #### 9.3 Dashboard de Progreso
 - [ ] Refinar dashboard con datos de progreso
-- [ ] Mostrar gráfico de evolución semanal
+- [ ] Mostrar grÃ¡fico de evoluciÃ³n semanal
 - [ ] Mostrar dimensiones con mejora
 - [ ] Mostrar dimensiones a trabajar
 - [ ] Implementar resumen ejecutivo de progreso
 
 ---
 
-## Fase 4 — Adaptive Training Engine v1
+## Fase 4 â€” Adaptive Training Engine v1
 
-### Sprint 10 — Taxonomía Aplicada
+### Sprint 10 â€” TaxonomÃ­a Aplicada
 
-#### 10.1 Catálogo de Ejercicios
-- [ ] Definir catálogo inicial de ejercicios
+#### 10.1 CatÃ¡logo de Ejercicios
+- [ ] Definir catÃ¡logo inicial de ejercicios
 - [ ] Crear tabla exercise_catalog
 - [ ] Implementar ejercicios base:
   - [ ] sustain_note_basic
@@ -459,20 +459,20 @@
   - [ ] register_bridge
 - [ ] Definir variantes por nivel
 
-#### 10.2 Mapeo Técnica-Error-Ejercicio
-- [ ] Crear tabla de reglas problema → corrección
-- [ ] Mapear técnicas con ejercicios
-- [ ] Mapear errores con técnicas
+#### 10.2 Mapeo TÃ©cnica-Error-Ejercicio
+- [ ] Crear tabla de reglas problema â†’ correcciÃ³n
+- [ ] Mapear tÃ©cnicas con ejercicios
+- [ ] Mapear errores con tÃ©cnicas
 - [ ] Mapear ejercicios con documentos relacionados
 - [ ] Implementar consulta de mapeos
 
 #### 10.3 Niveles de Dificultad
 - [ ] Definir niveles: beginner, foundation, intermediate, advanced, professional
-- [ ] Configurar parámetros por nivel
-- [ ] Implementar reglas de progresión de dificultad
-- [ ] Implementar reglas de regresión
+- [ ] Configurar parÃ¡metros por nivel
+- [ ] Implementar reglas de progresiÃ³n de dificultad
+- [ ] Implementar reglas de regresiÃ³n
 
-### Sprint 11 — Generación de Tareas
+### Sprint 11 â€” GeneraciÃ³n de Tareas
 
 #### 11.1 Tabla de Tareas
 - [ ] Implementar tabla tasks
@@ -488,14 +488,14 @@
 - [ ] Evitar ejercicios redundantes consecutivos
 - [ ] Considerar estado de fatiga
 
-#### 11.3 Generación de Tareas
-- [ ] Implementar lógica de generación de tarea
+#### 11.3 GeneraciÃ³n de Tareas
+- [ ] Implementar lÃ³gica de generaciÃ³n de tarea
 - [ ] Asignar dificultad inicial
-- [ ] Definir criterios de éxito
-- [ ] Definir duración y repeticiones
+- [ ] Definir criterios de Ã©xito
+- [ ] Definir duraciÃ³n y repeticiones
 - [ ] Guardar tarea en PostgreSQL
 
-### Sprint 12 — Adaptación Simple
+### Sprint 12 â€” AdaptaciÃ³n Simple
 
 #### 12.1 Difficulty Manager
 - [ ] Implementar reglas de subida de dificultad
@@ -504,30 +504,30 @@
 - [ ] Considerar consistencia en decisiones
 
 #### 12.2 Load Balancer
-- [ ] Implementar balance de carga de práctica
+- [ ] Implementar balance de carga de prÃ¡ctica
 - [ ] Evitar sobrecarga de ejercicios
-- [ ] Introducir práctica ligera cuando corresponda
-- [ ] Considerar días consecutivos de práctica
+- [ ] Introducir prÃ¡ctica ligera cuando corresponda
+- [ ] Considerar dÃ­as consecutivos de prÃ¡ctica
 
 #### 12.3 Agenda Diaria
 - [ ] Implementar Agenda Builder
-- [ ] Generar agenda con objetivo del día
-- [ ] Ordenar bloques de práctica
-- [ ] Definir duración total
-- [ ] Mostrar criterio de éxito
-- [ ] Generar mensaje de foco técnico
+- [ ] Generar agenda con objetivo del dÃ­a
+- [ ] Ordenar bloques de prÃ¡ctica
+- [ ] Definir duraciÃ³n total
+- [ ] Mostrar criterio de Ã©xito
+- [ ] Generar mensaje de foco tÃ©cnico
 
 #### 12.4 UI de Tareas
 - [ ] Mostrar tarea actual en dashboard
-- [ ] Mostrar agenda del día
+- [ ] Mostrar agenda del dÃ­a
 - [ ] Implementar marcado de tarea completada
 - [ ] Mostrar historial de tareas
 
 ---
 
-## Fase 5 — Knowledge Service + Biblioteca Interna
+## Fase 5 â€” Knowledge Service + Biblioteca Interna
 
-### Sprint 13 — Biblioteca Básica
+### Sprint 13 â€” Biblioteca BÃ¡sica
 
 #### 13.1 Estructura Documental
 - [ ] Crear carpeta docs/ con estructura:
@@ -536,62 +536,62 @@
   - [ ] docs/problems/
   - [ ] docs/health/
   - [ ] docs/resources/
-- [ ] Crear artículos iniciales por categoría
+- [ ] Crear artÃ­culos iniciales por categorÃ­a
 - [ ] Definir formato Markdown estandarizado
 
 #### 13.2 UI de Biblioteca
-- [ ] Crear página /library
-- [ ] Implementar listado por categorías
-- [ ] Implementar búsqueda de artículos
-- [ ] Crear página de artículo /library/[slug]
+- [ ] Crear pÃ¡gina /library
+- [ ] Implementar listado por categorÃ­as
+- [ ] Implementar bÃºsqueda de artÃ­culos
+- [ ] Crear pÃ¡gina de artÃ­culo /library/[slug]
 - [ ] Implementar renderizado de Markdown
-- [ ] Añadir tabla de contenidos
+- [ ] AÃ±adir tabla de contenidos
 
 #### 13.3 Metadatos
-- [ ] Definir frontmatter para artículos
+- [ ] Definir frontmatter para artÃ­culos
 - [ ] Incluir: category, subcategory, related_techniques, related_errors
 - [ ] Incluir: difficulty_level, risk_level
 - [ ] Incluir: last_reviewed_at
 
-### Sprint 14 — Knowledge Service
+### Sprint 14 â€” Knowledge Service
 
 #### 14.1 Content Parser
 - [ ] Implementar parser de Markdown
 - [ ] Extraer frontmatter como metadatos
-- [ ] Dividir artículos en chunks pedagógicos
-- [ ] Identificar tipos de chunk: definición, causas, síntomas, ejercicios
+- [ ] Dividir artÃ­culos en chunks pedagÃ³gicos
+- [ ] Identificar tipos de chunk: definiciÃ³n, causas, sÃ­ntomas, ejercicios
 
-#### 14.2 Indexación
+#### 14.2 IndexaciÃ³n
 - [ ] Implementar Indexing Layer
-- [ ] Indexar por categoría
+- [ ] Indexar por categorÃ­a
 - [ ] Indexar por etiquetas
-- [ ] Indexar por relaciones técnica/error
+- [ ] Indexar por relaciones tÃ©cnica/error
 - [ ] Crear tabla knowledge_documents
 - [ ] Crear tabla knowledge_chunks
 
 #### 14.3 Retrieval Layer
-- [ ] Implementar búsqueda estructurada
-- [ ] Implementar búsqueda por categoría
-- [ ] Implementar búsqueda por técnica
-- [ ] Implementar búsqueda por error
-- [ ] Implementar búsqueda semántica inicial
+- [ ] Implementar bÃºsqueda estructurada
+- [ ] Implementar bÃºsqueda por categorÃ­a
+- [ ] Implementar bÃºsqueda por tÃ©cnica
+- [ ] Implementar bÃºsqueda por error
+- [ ] Implementar bÃºsqueda semÃ¡ntica inicial
 
-### Sprint 15 — Enlaces Pedagógicos
+### Sprint 15 â€” Enlaces PedagÃ³gicos
 
 #### 15.1 Pedagogical Context Builder
 - [ ] Implementar contexto para LLM
-- [ ] Unir métricas con documentación relevante
+- [ ] Unir mÃ©tricas con documentaciÃ³n relevante
 - [ ] Considerar nivel del usuario
 - [ ] Considerar error detectado
 
 #### 15.2 UI de Enlaces
-- [ ] Mostrar "Ver explicación" en reportes
+- [ ] Mostrar "Ver explicaciÃ³n" en reportes
 - [ ] Recomendar docs por error detectado
-- [ ] Enlazar a artículos concretos
-- [ ] Mostrar objetos pedagógicos estructurados
+- [ ] Enlazar a artÃ­culos concretos
+- [ ] Mostrar objetos pedagÃ³gicos estructurados
 
-#### 15.3 Objetos Pedagógicos
-- [ ] Crear estructura de respuesta pedagógica:
+#### 15.3 Objetos PedagÃ³gicos
+- [ ] Crear estructura de respuesta pedagÃ³gica:
   - topic
   - explanation
   - common_causes
@@ -602,13 +602,13 @@
 
 ---
 
-## Fase 6 — Pedagogical Orchestrator + LLM
+## Fase 6 â€” Pedagogical Orchestrator + LLM
 
-### Sprint 16 — Context Builder
+### Sprint 16 â€” Context Builder
 
 #### 16.1 Contexto Compuesto
-- [ ] Implementar mezcla de métricas + progreso + docs
-- [ ] Incluir histórico reciente
+- [ ] Implementar mezcla de mÃ©tricas + progreso + docs
+- [ ] Incluir histÃ³rico reciente
 - [ ] Incluir debilidad dominante
 - [ ] Incluir objetivo del ejercicio
 - [ ] Estructurar contexto para LLM
@@ -619,17 +619,17 @@
 - [ ] Incluir: linked_docs
 - [ ] Validar formato de salida
 
-### Sprint 17 — LLM Inicial
+### Sprint 17 â€” LLM Inicial
 
-#### 17.1 Integración de Proveedor
+#### 17.1 IntegraciÃ³n de Proveedor
 - [ ] Seleccionar proveedor LLM (OpenAI/Anthropic/etc.)
 - [ ] Configurar cliente LLM
-- [ ] Implementar llamada asíncrona
+- [ ] Implementar llamada asÃ­ncrona
 - [ ] Configurar timeouts y retries
 - [ ] Implementar manejo de errores
 
-#### 17.2 Feedback Post-Sesión
-- [ ] Generar resumen post-sesión con LLM
+#### 17.2 Feedback Post-SesiÃ³n
+- [ ] Generar resumen post-sesiÃ³n con LLM
 - [ ] Explicar error dominante
 - [ ] Recomendar siguiente paso
 - [ ] Mostrar feedback en UI
@@ -638,19 +638,19 @@
 #### 17.3 Versionado de Prompts
 - [ ] Implementar sistema de versionado de prompts
 - [ ] Guardar prompt_version en pedagogical_feedback
-- [ ] Permitir iteración de prompts
-- [ ] Trackear efectividad por versión
+- [ ] Permitir iteraciÃ³n de prompts
+- [ ] Trackear efectividad por versiÃ³n
 
-### Sprint 18 — Grounding Pedagógico
+### Sprint 18 â€” Grounding PedagÃ³gico
 
 #### 18.1 Retrieval Conectado
 - [ ] Conectar retrieval al contexto del LLM
 - [ ] Incluir chunks relevantes en prompt
-- [ ] Limitar contexto a información útil
+- [ ] Limitar contexto a informaciÃ³n Ãºtil
 - [ ] Implementar re-ranking contextual
 
 #### 18.2 Mensajes Seguros
-- [ ] Implementar validación de respuestas
+- [ ] Implementar validaciÃ³n de respuestas
 - [ ] Evitar consejos agresivos si hay fatiga
 - [ ] Priorizar mensajes conservadores en riesgo
 - [ ] Implementar fallback a plantillas si LLM falla
@@ -658,106 +658,106 @@
 #### 18.3 Enlaces a Docs
 - [ ] Incluir enlaces a docs concretas en feedback
 - [ ] Mostrar referencias cruzadas
-- [ ] Implementar navegación desde feedback a doc
+- [ ] Implementar navegaciÃ³n desde feedback a doc
 
 ---
 
-## Fase 7 — Premium Real de Análisis y Experiencia
+## Fase 7 â€” Premium Real de AnÃ¡lisis y Experiencia
 
-### Sprint 19 — Métricas Avanzadas
+### Sprint 19 â€” MÃ©tricas Avanzadas
 
 #### 19.1 Onset Timing
-- [ ] Implementar detección de onset
+- [ ] Implementar detecciÃ³n de onset
 - [ ] Calcular onset_timing_ms
-- [ ] Evaluar precisión de ataque
+- [ ] Evaluar precisiÃ³n de ataque
 - [ ] Incorporar al scoring
 
 #### 19.2 Sustain Duration
-- [ ] Implementar medición de duración sostenida
+- [ ] Implementar mediciÃ³n de duraciÃ³n sostenida
 - [ ] Calcular sustain_duration_seconds
-- [ ] Evaluar capacidad de sostén
+- [ ] Evaluar capacidad de sostÃ©n
 - [ ] Incorporar al scoring
 
 #### 19.3 Vibrato Inicial
-- [ ] Implementar detección de vibrato
+- [ ] Implementar detecciÃ³n de vibrato
 - [ ] Calcular vibrato_rate (Hz)
 - [ ] Calcular vibrato_depth
 - [ ] Evaluar regularidad de vibrato
 
 #### 19.4 Consistencia
-- [ ] Implementar métrica de consistencia entre repeticiones
+- [ ] Implementar mÃ©trica de consistencia entre repeticiones
 - [ ] Calcular variance entre repeticiones
 - [ ] Evaluar progreso dentro de ejercicio
 - [ ] Incorporar al scoring
 
-### Sprint 20 — UX Premium
+### Sprint 20 â€” UX Premium
 
 #### 20.1 Dashboard Refinado
-- [ ] Rediseñar dashboard con look premium
-- [ ] Mejorar jerarquía visual
+- [ ] RediseÃ±ar dashboard con look premium
+- [ ] Mejorar jerarquÃ­a visual
 - [ ] Implementar animaciones sutiles
-- [ ] Mejorar tipografía y espaciado
+- [ ] Mejorar tipografÃ­a y espaciado
 - [ ] Implementar dark mode
 
 #### 20.2 Practice Flow Mejorado
-- [ ] Refinar UI de práctica
+- [ ] Refinar UI de prÃ¡ctica
 - [ ] Mejorar feedback visual en tiempo real
-- [ ] Implementar animaciones de transición
+- [ ] Implementar animaciones de transiciÃ³n
 - [ ] Mejorar indicaciones visuales
 - [ ] Implementar microinteracciones
 
-#### 20.3 Gráficos Mejorados
-- [ ] Refinar diseño de gráficos
-- [ ] Implementar gráficos de skill map
+#### 20.3 GrÃ¡ficos Mejorados
+- [ ] Refinar diseÃ±o de grÃ¡ficos
+- [ ] Implementar grÃ¡ficos de skill map
 - [ ] Mejorar tooltips y leyendas
-- [ ] Implementar exportación de gráficos
+- [ ] Implementar exportaciÃ³n de grÃ¡ficos
 
 #### 20.4 Microfeedback
-- [ ] Implementar feedback inmediato por repetición
-- [ ] Mostrar indicador de éxito/fracaso
-- [ ] Implementar mensajes de ánimo
+- [ ] Implementar feedback inmediato por repeticiÃ³n
+- [ ] Mostrar indicador de Ã©xito/fracaso
+- [ ] Implementar mensajes de Ã¡nimo
 - [ ] Celebrar hitos de progreso
 
-### Sprint 21 — Seguridad y Salud Vocal
+### Sprint 21 â€” Seguridad y Salud Vocal
 
 #### 21.1 Alertas Conservadoras
-- [ ] Implementar detección de fatiga
+- [ ] Implementar detecciÃ³n de fatiga
 - [ ] Mostrar alertas de descanso
-- [ ] Implementar límites de práctica continua
+- [ ] Implementar lÃ­mites de prÃ¡ctica continua
 - [ ] Sugerir pausas activas
 
 #### 21.2 Docs de Riesgo
-- [ ] Crear artículos de salud vocal
+- [ ] Crear artÃ­culos de salud vocal
 - [ ] Enlazar docs de riesgo en feedback
-- [ ] Implementar señales de alarma
-- [ ] Crear guía de cuándo consultar especialista
+- [ ] Implementar seÃ±ales de alarma
+- [ ] Crear guÃ­a de cuÃ¡ndo consultar especialista
 
 #### 21.3 Descansos Sugeridos
-- [ ] Implementar recomendación de descansos
+- [ ] Implementar recomendaciÃ³n de descansos
 - [ ] Ajustar agenda si hay fatiga
-- [ ] Implementar práctica ligera post-fatiga
-- [ ] Trackear recuperación
+- [ ] Implementar prÃ¡ctica ligera post-fatiga
+- [ ] Trackear recuperaciÃ³n
 
 ---
 
-## Fase 8 — Escalabilidad y Excelencia Operativa
+## Fase 8 â€” Escalabilidad y Excelencia Operativa
 
-### Sprint 22 — Observabilidad
+### Sprint 22 â€” Observabilidad
 
 #### 22.1 Logs Estructurados
 - [ ] Implementar logging estructurado en web
 - [ ] Implementar logging estructurado en audio-engine
-- [ ] Configurar correlación de logs
+- [ ] Configurar correlaciÃ³n de logs
 - [ ] Implementar niveles de log (INFO, WARN, ERROR)
 
-#### 22.2 Métricas de Latencia
-- [ ] Medir latencia cliente → audio-engine
-- [ ] Medir tiempo de análisis por chunk
+#### 22.2 MÃ©tricas de Latencia
+- [ ] Medir latencia cliente â†’ audio-engine
+- [ ] Medir tiempo de anÃ¡lisis por chunk
 - [ ] Medir tiempo hasta primer feedback
 - [ ] Medir latencia de endpoints
 
 #### 22.3 Dashboards Internos
-- [ ] Crear dashboard de métricas técnicas
+- [ ] Crear dashboard de mÃ©tricas tÃ©cnicas
 - [ ] Mostrar sesiones activas
 - [ ] Mostrar latencia promedio
 - [ ] Mostrar tasa de errores
@@ -767,34 +767,34 @@
 - [ ] Configurar alertas por email/Slack
 - [ ] Alertar aumento de errores
 - [ ] Alertar latencia excesiva
-- [ ] Alertar caída de servicios
+- [ ] Alertar caÃ­da de servicios
 - [ ] Alertar fallos de billing
 
-### Sprint 23 — Optimización
+### Sprint 23 â€” OptimizaciÃ³n
 
-#### 23.1 Reducción de Payloads
-- [ ] Optimizar tamaño de chunks de audio
-- [ ] Implementar compresión de audio
+#### 23.1 ReducciÃ³n de Payloads
+- [ ] Optimizar tamaÃ±o de chunks de audio
+- [ ] Implementar compresiÃ³n de audio
 - [ ] Reducir payloads de API
 - [ ] Implementar caching de respuestas
 
-#### 23.2 Optimización de Pipeline
+#### 23.2 OptimizaciÃ³n de Pipeline
 - [ ] Mejorar chunking de audio
 - [ ] Optimizar pipeline profundo
 - [ ] Paralelizar procesamiento cuando sea posible
 - [ ] Implementar colas para deep analysis
 
-#### 23.3 Optimización de Costes
+#### 23.3 OptimizaciÃ³n de Costes
 - [ ] Revisar consumo de R2
 - [ ] Optimizar consultas a PostgreSQL
 - [ ] Revisar uso de LLM
-- [ ] Implementar políticas de retención de audio
+- [ ] Implementar polÃ­ticas de retenciÃ³n de audio
 
-### Sprint 24 — Hardening
+### Sprint 24 â€” Hardening
 
 #### 24.1 Rate Limits
 - [ ] Implementar rate limiting en endpoints
-- [ ] Configurar límites por usuario
+- [ ] Configurar lÃ­mites por usuario
 - [ ] Implementar backoff exponencial
 - [ ] Mostrar mensajes de rate limit
 
@@ -804,10 +804,10 @@
 - [ ] Implementar fallbacks graceful
 - [ ] Implementar colas de reintento
 
-#### 24.3 Recuperación
-- [ ] Implementar recuperación de sesiones interrumpidas
+#### 24.3 RecuperaciÃ³n
+- [ ] Implementar recuperaciÃ³n de sesiones interrumpidas
 - [ ] Implementar auto-guardado progresivo
-- [ ] Manejar reconexión de WebSocket
+- [ ] Manejar reconexiÃ³n de WebSocket
 - [ ] Implementar estados recoverable
 
 ---
@@ -816,10 +816,10 @@
 
 ### Seguridad
 
-#### Autenticación y Autorización
-- [ ] Verificar autenticación en todos los endpoints
-- [ ] Implementar autorización por recurso
-- [ ] Validar permisos de suscripción
+#### AutenticaciÃ³n y AutorizaciÃ³n
+- [ ] Verificar autenticaciÃ³n en todos los endpoints
+- [ ] Implementar autorizaciÃ³n por recurso
+- [ ] Validar permisos de suscripciÃ³n
 - [ ] Implementar roles si es necesario
 
 #### Seguridad de Datos
@@ -829,52 +829,52 @@
 - [ ] No exponer claves en cliente
 
 #### Seguridad de APIs
-- [ ] Implementar autenticación entre servicios
+- [ ] Implementar autenticaciÃ³n entre servicios
 - [ ] Validar payloads de entrada
-- [ ] Implementar sanitización de inputs
+- [ ] Implementar sanitizaciÃ³n de inputs
 - [ ] Configurar CORS correctamente
 
 ### Testing
 
 #### Tests de Componentes
-- [ ] Testear componentes críticos de UI
-- [ ] Testear componentes de práctica
+- [ ] Testear componentes crÃ­ticos de UI
+- [ ] Testear componentes de prÃ¡ctica
 - [ ] Testear componentes de dashboard
 - [ ] Testear componentes de billing
 
 #### Tests de Server Actions
-- [ ] Testear acciones de sesión
+- [ ] Testear acciones de sesiÃ³n
 - [ ] Testear acciones de tareas
 - [ ] Testear acciones de progreso
 - [ ] Testear acciones de billing
 
 #### Tests de Audio-Engine
-- [ ] Testear métricas con audio de prueba
+- [ ] Testear mÃ©tricas con audio de prueba
 - [ ] Testear scoring con casos controlados
 - [ ] Testear pipelines de procesamiento
 - [ ] Testear endpoints de API
 
-#### Tests de Integración
-- [ ] Testear flujo completo de sesión
-- [ ] Testear integración con Clerk
-- [ ] Testear integración con Stripe
-- [ ] Testear integración con R2
+#### Tests de IntegraciÃ³n
+- [ ] Testear flujo completo de sesiÃ³n
+- [ ] Testear integraciÃ³n con Clerk
+- [ ] Testear integraciÃ³n con Stripe
+- [ ] Testear integraciÃ³n con R2
 
-### Documentación
+### DocumentaciÃ³n
 
-#### Documentación Técnica
+#### DocumentaciÃ³n TÃ©cnica
 - [ ] Documentar arquitectura del sistema
 - [ ] Documentar contratos entre servicios
 - [ ] Documentar esquema de base de datos
 - [ ] Documentar APIs
 
-#### Documentación de Usuario
-- [ ] Crear guía de inicio rápido
+#### DocumentaciÃ³n de Usuario
+- [ ] Crear guÃ­a de inicio rÃ¡pido
 - [ ] Crear FAQ
 - [ ] Documentar ejercicios disponibles
-- [ ] Crear guía de solución de problemas
+- [ ] Crear guÃ­a de soluciÃ³n de problemas
 
-### Monitorización de Producto
+### MonitorizaciÃ³n de Producto
 
 #### Eventos a Trackear
 - [ ] auth_signed_in
@@ -890,14 +890,14 @@
 - [ ] subscription_renewed
 - [ ] subscription_canceled
 
-#### Métricas de Producto
-- [ ] Activación (usuarios que completan onboarding)
-- [ ] Frecuencia de práctica (sesiones/semana)
+#### MÃ©tricas de Producto
+- [ ] ActivaciÃ³n (usuarios que completan onboarding)
+- [ ] Frecuencia de prÃ¡ctica (sesiones/semana)
 - [ ] Abandono por pantalla
 - [ ] Abandono por tarea
 - [ ] Eficacia del loop adaptativo
-- [ ] Conversión a suscripción
-- [ ] Retención por cohorte
+- [ ] ConversiÃ³n a suscripciÃ³n
+- [ ] RetenciÃ³n por cohorte
 
 ---
 
@@ -906,25 +906,26 @@
 ### Pre-Lanzamiento
 - [ ] Todos los tests passing
 - [ ] Linting y type checking sin errores
-- [ ] Documentación técnica completa
-- [ ] Variables de entorno configuradas en producción
+- [ ] DocumentaciÃ³n tÃ©cnica completa
+- [ ] Variables de entorno configuradas en producciÃ³n
 - [ ] Backups de base de datos configurados
-- [ ] Monitorización y alertas activas
+- [ ] MonitorizaciÃ³n y alertas activas
 - [ ] Plan de rollback definido
 
 ### Lanzamiento
-- [ ] Desplegar en producción
+- [ ] Desplegar en producciÃ³n
 - [ ] Verificar health checks
-- [ ] Verificar flujos críticos
-- [ ] Monitorizar métricas técnicas
+- [ ] Verificar flujos crÃ­ticos
+- [ ] Monitorizar mÃ©tricas tÃ©cnicas
 - [ ] Monitorizar errores
 
 ### Post-Lanzamiento
 - [ ] Recopilar feedback de usuarios
-- [ ] Monitorizar métricas de producto
+- [ ] Monitorizar mÃ©tricas de producto
 - [ ] Iterar sobre problemas detectados
 - [ ] Planificar siguientes sprints
 
 ---
 
 *Documento generado a partir de "vozazi_arquitectura_tecnica_completa.md"*
+
